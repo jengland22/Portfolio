@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+/* template CSS */  
+html{
+    box-sizing: border-box;
+    background-image: url("../images/site/checkerboard.jpg");
+    background-size: 400px;
+    background-repeat: repeat;
+    font-family: Comfortaa, sans-serif;
+    font-size: 10px;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1{
+    padding: 1%;
+}
+
+a.account{
+    float: right;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 175%;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #3a3a3a;
+}
+
+/* header span {
+    font-size: 100%;
+    padding-top: 60px;
+} */
+
+body{
+    background-color: #ffffff;
+    border: 2px solid #4c96d7;
+    margin: 5% auto;
+    width: 80%;
+}
+
+.logo{
+    height: 60px;
+    padding: 10px 0px;
+}
+
+nav{
+    background-color: #3a3a3a;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+footer{
+    border-top: 3px solid #3a3a3a;
+    text-align: center;
+    line-height: 85%;
+    font-size: 75%;
+    margin-bottom: 10px;
+}
+
+ /*home page CSS */
+div.model{
+    position: relative;
+    z-index: 1;
+    margin: 50px auto;
+    width: 97%;
+    color: #205A8D;
+}
+
+div.model p {
+    margin-top: -25px;
+    padding: 2%;
+}
+
+div.model img.car{
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+div.model button{
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #3a3a3a;
+    color: #3a3a3a;
+    background-color: #4c96d7;
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 150px;
+}
+
+p{
+    margin: 15px;
+}
+
+h2{
+    padding: 5px;
+    font-size: 1em;
+}
+
+div.reviews ul{
+    margin-top: -15px;
+}
+
+div.reviews li{
+    padding: 5px;
+    font-size: 120%;
+}
+
+div.upgrades div.images{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+    margin-bottom: 25px;   
+}
+
+.images{
+    flex: 50%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+div.upgrades img {
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 5px 35px;
+    background-color: #4c96d7;
+    border: 1px solid #3a3a3a;
+}
+
+div.upgrades img.flame {
+    padding: 5px 38px 0px 38px;
+    height: 70px;
+}
+
+div.upgrades img.sticker{
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 10px;
+    height: 50px;
+}
+
+div.upgrades img.cap{
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 45px;
+    height: 50px;
+}
+
+div.upgrades figure{
+    margin: 10px 0px;
+}
+
+div.upgrades figcaption{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* error page CSS */
+
+p.error{
+    margin: 15px;
+}
+
+/* form css */
+
+form {
+    margin: 15px;
+}
+
+select#classificationId {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 2em;
+}
+
+form input.button{
+    border: .5px solid #3a3a3a ;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+form a.member{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.required::after{
+    content: "*";
+    color: red;
+}
+
+#inv-display{
+    /* margin: 0; */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+#inv-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+
+#inv-display li img {
+    max-width: 100%;
+    max-height: 140px;
+}
+
+/* vehicle detail page */
+.details img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+
+    nav{
+        justify-content: left;
+        padding: 20px 0px;
+    }
+
+    .logo{
+        height: 70px;
+    }
+
+    a.account{
+        font-size: 120%;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    footer{
+        margin-top: 40px;
+    }
+
+   
+
+    /* home page css */
+
+      
+    div.model img.car{
+        position: relative;
+        margin-top: -80px;
+        z-index: -1;
+    } 
+
+    div.model p {
+        margin-top: 0;
+        padding: 2%;
+    }
+
+    div.model button{
+        position: absolute;
+        height: 50px;
+        width: 150px;
+        margin-top: -42%;
+        margin-left: 20px;
+        padding: 10px 10px;
+        font-size: 1.3em;
+    }
+
+    div.lower{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.reviews{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    div.reviews ul{
+        margin-top: 20px;
+    }
+
+    div.reviews li{
+        margin-top: 10px;
+        /* font-size: .99rem; */
+    }
+
+    div.upgrades{
+        margin: 7px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div.upgrades img {
+        padding: 5px 70px;
+    }
+    
+    div.upgrades img.flame {
+        padding: 5px 70px 0px 70px;
+        height: 70px;
+    }
+    
+    div.upgrades img.sticker{
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-bottom: 15px;
+        height: 50px;
+    }
+    
+    div.upgrades img.cap{
+        padding-bottom: 15px;
+        padding-left: 73px;
+        padding-right: 73px;
+        height: 50px;
+    }
+
+    /* form css */
+
+
+    form label {
+        font-size: 1em;
+    }
+
+    form a.member{
+        font-size: 1em;
+    }
+
+    /* For vehicle display in classification view */
+	#inv-display {
+        margin: 0;
+        max-width: 100%;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	#inv-display h2{
+		font-size: 1rem;
+	}
+
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+      
+	#inv-display div {
+		width: 100%;
+	} 
+
+    hr{
+        border: 2px solid black;
+        width: 100%;
+    }
+
+    .detailsPage{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .details{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    img.thumbnail{
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .customerReviews{
+        grid-column: 2;
+    }
+
+    .customerReviews textarea{
+        width: 50%;
+        height: 100px;
+    }
+
+    img.thumbnail:hover{
+        transform: scale(1.5);
+    }
+}
+
+
